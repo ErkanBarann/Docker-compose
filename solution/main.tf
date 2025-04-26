@@ -14,7 +14,7 @@ provider "aws" {
 resource "aws_instance" "tf-docker-ec2" {
     ami = "ami-084568db4383264d4"
     instance_type = "t2.micro"
-    key_name = "techpro"
+    key_name = "firstpem"
     vpc_security_group_ids = [aws_security_group.allow_ssh.id]
     tags = {
         Name = "TechPro Web Server"
@@ -27,8 +27,8 @@ resource "aws_instance" "tf-docker-ec2" {
           sudo usermod -aG docker ubuntu
           newgrp docker
           cd /home/ubuntu
-          git clone https://github.com/xxxxxxxxxxxxxxxxx/Docker-Project-TechPro-Rental-Car.git
-          cd /home/ubuntu/Docker-Project-TechPro-Rental-Car
+          git clone https://github.com/ErkanBarann/Docker-compose.git
+          cd /home/ubuntu/Docker-compose
           docker compose up -d
           EOF 
     }
