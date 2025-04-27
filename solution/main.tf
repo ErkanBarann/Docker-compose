@@ -17,7 +17,7 @@ resource "aws_instance" "tf-docker-ec2" {
     key_name = "firstpem"
     vpc_security_group_ids = [aws_security_group.allow_ssh.id]
     tags = {
-        Name = "TechPro Web Server"
+        Name = "Tech Web Server"
     }
     user_data = <<-EOF
           #! /bin/bash

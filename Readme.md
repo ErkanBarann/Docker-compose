@@ -124,8 +124,8 @@ In this project, you are expected to deploy a car rental application developed w
        apt install -y docker.io
        apt install -y docker-compose
        cd /home/ubuntu
-       git clone https://github.com/username/car-rental.git
-       cd car-rental
+       git clone https://github.com/ErkanBarann/Docker-compose.git
+       cd Docker-compose
        docker-compose up -d
      EOF
    }
